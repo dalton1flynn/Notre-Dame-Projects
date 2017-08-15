@@ -1,2 +1,4 @@
-# Notre-Dame-Projects
+# Notre Dame Projects
 This repository contains 3 class projects I have completed during my time at Notre Dame. The first, MATLAB code for modeling a counter current heat exchanger, I wrote during the spring of my freshman year for my Introduction to Engineering class. The second MATLAB project determines the 90% confidence interval (by the Monte Carlo method) for the dimensionless diffusivity parameter K from a set of given data. I wrote this as the final project for my Numerical and Statistical Analysis course, which I took during the spring of my sophomore year. The final class project included in this repository is a Python notebook which models PID control of a wind turbine. This was a group project completed during the spring of my junior year. I wrote the code for the calculations pieces.
+
+Finally, this repository includes an example of Excel VBA code I wrote during my junior year. The code randomly places a list of 25 options on a 5 x 5 "BINGO" board created in an Excel spreadsheet. Other Excel VBA work I have done has been during my internships for Procter & Gamble. I cannot share that work here.

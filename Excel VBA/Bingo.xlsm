@@ -1,1 +1,45 @@
+Option Explicit
 
+Dim arr() As Integer
+Dim i As Integer
+Dim upper As Integer
+Dim lower As Integer
+Dim pick As Variant
+Dim randnum As Integer
+Dim row As Integer
+Dim col As Integer
+Dim j As Integer
+
+Public Sub Bingo()
+
+ReDim arr(1 To 24)
+For i = 1 To 24
+    arr(i) = i
+Next i
+
+
+For row = 1 To 5
+    For col = 1 To 5
+        If row = 3 And col = 3 Then
+            Worksheets(1).Cells(row + 3, col).Value = "FREE: Starts Class"
+        
+        Else
+            upper = UBound(arr, 1)
+            lower = LBound(arr, 1)
+            randnum = Int((upper - lower + 1) * Rnd + lower)
+            pick = Worksheets(2).Cells(arr(randnum), 2)
+            Worksheets(1).Cells(row + 3, col).Value = pick
+         
+            For j = randnum + 1 To upper
+                arr(j - 1) = arr(j)
+            Next j
+        
+            If UBound(arr, 1) > 1 Then
+                ReDim Preserve arr(1 To upper - 1)
+            End If
+        End If
+        
+    Next col
+Next row
+
+End Sub

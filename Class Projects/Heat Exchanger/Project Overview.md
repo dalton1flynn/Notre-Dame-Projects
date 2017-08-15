@@ -1,4 +1,4 @@
-#Project Overview
+# Project Overview
 
 Below is the reflection I wrote on this project during the spring of my freshman year:
 

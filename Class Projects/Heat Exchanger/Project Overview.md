@@ -12,7 +12,7 @@ Below is the reflection I wrote on this project during the spring of my freshman
   First, we used an energy balance, breaking up the pipes into many small pieces and calculating the energy flowing into and out of each 
   piece. We utilized Euler's method to calculate how the temperature changed over time in the final piece of each pipe. This method allowed
   us to calculate expected final temperatures based on a certain length of heat transfer surface. Our next method took advantage of heat 
-  transfer equations, such as qdot=U*A*deltaT and q=c*mdot*deltaT. With the fact that A=2*pi*r*L (where L=length), we could calculate the 
+  transfer equations, such as $qdot=U*A*/delta*T$ and $q=c*mdot*/delta*T$. With the fact that $A=2*pi*r*L$ (where L=length), we could calculate the 
   length of exchanger necessary to achieve a desired final temperature. I was heavily involved in developing these models for our group, 
   and I wrote two programs that we eventually used in our GUI using these methods. I have attached these programs at the bottom.
 
